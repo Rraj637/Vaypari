@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vaypari: The one-stop digital infrastructure for small businesses and freelancers."
+    />
+    <title>Vaypari - Comprehensive Business & Digital Solutions</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Vaypari - Managed Business & Custom Web SaaS"
+    />
+    <meta
+      property="og:description"
+      content="The ultimate all-in-one suite providing smart invoicing, operation management, and custom business websites."
+    />
+    <meta
+      property="og:image"
+      content="https://www.vaypari.com/assets/preview-banner.png"
+    />
+    <meta property="og:url" content="https://www.vaypari.com" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Vaypari - Professional Invoicing & Digital Agency"
+    />
+    <meta
+      name="twitter:description"
+      content="The modern standard for automated billing systems and end-to-end client web deployments."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.vaypari.com/assets/preview-banner.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Vaypari </a>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-button">
+        <a href="#" class="cta-btn">Login / Register</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>The All-In-One Platform for <span>Vaypari.</span></h1>
+        <p>
+          Launch your custom business website, generate professional GST
+          invoices, track corporate expenses, and manage inventory seamlessly.
+          The complete digital and operational ecosystem built exclusively for
+          Indian enterprise scales and fast-growing freelancers.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary">Start Free Trial</a>
+          <a href="#" class="btn-secondary">Watch Demo</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder">
+          [ Vaypari App Dashboard Screenshot ]
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2>Empower Your Business Architecture</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Easy Invoicing</h3>
+          <p>
+            Generate professional, GST-compliant invoices in under a minute and
+            share them instantly via email or WhatsApp.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Expense Tracking</h3>
+          <p>
+            Monitor your daily business expenses, scan receipts, and generate
+            accurate financial reports to maximize tax deductions.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Inventory Management</h3>
+          <p>
+            Keep a real-time track of your stock levels, receive automated
+            low-stock alerts, and manage product variants seamlessly.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Custom Client Websites</h3>
+          <p>
+            Get your own fully managed business website hosted by Vaypari. We
+            handle your complete digital footprint, custom domains, and
+            corporate workflows end-to-end.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="estimator-section" id="estimator">
+      <h2>Instant Operations Estimator</h2>
+      <p class="sub-title">
+        Test our core logic. Estimate your billing and custom website setup
+        instantly.
+      </p>
+
+      <div class="estimator-wrapper">
+        <div class="form-group">
+          <label for="itemPrice">Invoice Item Amount (₹):</label>
+          <input
+            type="number"
+            id="itemPrice"
+            value="10000"
+            placeholder="Enter service/product cost"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="gstRate">GST Slab Rate (%):</label>
+          <select id="gstRate">
+            <option value="18">18% (Standard Service)</option>
+            <option value="12">12%</option>
+            <option value="5">5%</option>
+            <option value="0">0% (Exempted)</option>
+          </select>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="includeWebsite" checked />
+          <label for="includeWebsite"
+            >Add Custom Business Website Deployment Service (+ ₹5,000 one-time
+            setup)</label
+          >
+        </div>
+
+        <div class="result-panel">
+          <div class="result-row">
+            <span>Calculated GST Tax Amount:</span>
+            <span id="taxResult">₹1,800.00</span>
+          </div>
+          <div class="result-row">
+            <span>Website Agency Setup Fee:</span>
+            <span id="webResult">₹5,000.00</span>
+          </div>
+          <div class="result-row total-row">
+            <span>Estimated Grand Total Invoice:</span>
+            <span id="grandTotalResult">₹16,800.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2>Simple, Transparent Pricing</h2>
+      <p class="pricing-subtitle">
+        Choose the plan that fits your business scale. No hidden compliance
+        fees.
+      </p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Free Plan</h3>
+          <div class="price-tag">
+            ₹0
+            <span style="font-size: 14px; font-weight: normal; color: #64748b"
+              >/ lifetime</span
+            >
+          </div>
+          <ul>
+            <li>Up to 5 GST Invoices / month</li>
+            <li>Basic Expense Tracking</li>
+            <li>Single User Access</li>
+          </ul>
+          <a href="#" class="pricing-btn">Get Started</a>
+        </div>
+        <div class="pricing-card premium-pro">
+          <h3>Premium Pro</h3>
+          <div class="price-tag">
+            ₹499
+            <span style="font-size: 14px; font-weight: normal; color: #64748b"
+              >/ month</span
+            >
+          </div>
+          <ul>
+            <li>Unlimited GST Invoices</li>
+            <li>Advanced Expense & Tax Reports</li>
+            <li>Real-time Inventory Warehouse Alert</li>
+            <li>WhatsApp & Email Client Share Link</li>
+            <li>Priority 24/7 Support Desk Hook</li>
+          </ul>
+          <a href="#" class="pricing-btn">Go Premium Pro</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">Vaypari.</a>
+          <p>
+            The ultimate one-stop business infrastructure and digital deployment
+            platform engineered to launch, manage, and scale Indian enterprises
+            effortlessly.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vaypari. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

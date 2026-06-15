@@ -1,0 +1,632 @@
+/*
+  =======================================================================================
+  [PRODUCTION LAYER] GLOBAL STRUCTURAL STYLESHEET (style.css)
+  SYSTEM LOGIC: Directs responsive grids layouts, fluid structural transitions,
+  and explicit conditional breakpoints targeted for both desktop viewports and mobile agents.
+  =======================================================================================
+*/
+
+/*
+  * { Universal Selector }
+  SYSTEM LOGIC: Resets default inconsistencies across various browser layout engines.
+  box-sizing: border-box guarantees absolute mathematical space handling for layout rows.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+  header { Flexbox Navigation Layout Bar }
+  BUSINESS LOGIC: Aligns global operational navigation layers horizontally.
+*/
+header {
+  background-color: #f8fafc;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #2563eb;
+}
+
+.cta-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*
+  =========================================
+  [VIEWPORT ROW 2] GLOBAL HERO BANNER LAYOUT
+  =========================================
+*/
+.hero {
+  background-color: #f8fafc;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #2563eb;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #2563eb;
+  padding: 12px 28px;
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-image {
+  max-width: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 350px;
+  background-color: #cbd5e1;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #475569;
+  font-weight: bold;
+}
+
+/* =========================================
+  [VIEWPORT ROW 3] PLATFORM MODULAR FEATURES MATRIX
+  =========================================
+*/
+.features {
+  background-color: #ffffff;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.feature-card {
+  background-color: #f8fafc;
+  padding: 30px 24px;
+  border-radius: 8px;
+  width: 48%;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* =========================================
+   [VIEWPORT ROW 4] DYNAMIC ESTIMATOR CALCULATOR WORKSPACE
+   =========================================
+*/
+.estimator-section {
+  background-color: #ffffff;
+  padding: 60px 10%;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.estimator-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: left;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.estimator-section h2 {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.estimator-section .sub-title {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #0f172a;
+  background-color: #ffffff;
+}
+
+.form-group input:focus, .form-group select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.checkbox-group input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.result-panel {
+  background-color: #eff6ff;
+  border: 1px dashed #bfdbfe;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.result-row.total-row {
+  border-top: 1px solid #bfdbfe;
+  padding-top: 10px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+/* =========================================
+  [VIEWPORT ROW 5] MONETIZATION MODEL PRICING AREA
+  =========================================
+*/
+.pricing {
+  background-color: #f8fafc;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 50px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 48%;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card.premium-pro {
+  border: 2px solid #2563eb;
+}
+
+.pricing-card h3 {
+  font-size: 22px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price-tag {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-card ul li::before {
+  content: "✓";
+  color: #16a34a;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.pricing-btn {
+  display: block;
+  text-align: center;
+  background-color: #cbd5e1;
+  color: #1e293b;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.pricing-card.premium-pro .pricing-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+.pricing-card.premium-pro .pricing-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/*
+  =========================================
+  [VIEWPORT ROW 6] SITE SYSTEM PLATFORM GLOBAL FOOTER
+  =========================================
+*/
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 60px 10% 30px 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.footer-brand {
+  max-width: 35%;
+}
+
+.footer-brand .footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-column h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+  color: #3b82f6;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.footer-bottom-links a {
+  color: #64748b;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer-bottom-links a:hover {
+  color: #94a3b8;
+}
+
+
+/* =======================================================================================
+  🟢 CONDITIONAL MEDIA QUERY ENGINE (BREAKPOINT: 768px)
+  BUSINESS LOGIC: Enforces absolute grid optimization mechanics for mobile viewports.
+  =======================================================================================
+*/
+@media (max-width: 768px) {
+
+  /* [ROW 1 RESPONSIVENESS] GLOBAL HEADER LAYER
+    LOGIC: Converts default horizontal flex vectors into vertical stack arrays.
+  */
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* [ROW 2 RESPONSIVENESS] HERO MARKETING BANNER
+    LOGIC: Flattens multi-column containers to 100% full-width ratio to prevent image squeezing.
+  */
+  .hero {
+    flex-direction: column;
+    padding: 40px 5%;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px; /* Scales down header elements for smaller screens */
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .image-placeholder {
+    height: 250px; /* Conserves screen real estate on mobile panels */
+  }
+
+  /* [ROW 3 RESPONSIVENESS] MODULAR FEATURES LIST
+    LOGIC: Overrides the 48% twin-column structure, transforming cards into full horizontal row blocks.
+  */
+  .features {
+    padding: 50px 5%;
+  }
+
+  .features h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .feature-card {
+    width: 100%; /* Resets multi-column constraints to clear horizontal rows */
+    margin-bottom: 5px;
+  }
+
+  /* [ROW 4 RESPONSIVENESS] SYSTEM OPERATIONS ESTIMATOR
+    LOGIC: Fluid padding adaptation to prevent overflow crashes inside interactive dashboards.
+  */
+  .estimator-section {
+    padding: 50px 5%;
+  }
+
+  .estimator-wrapper {
+    padding: 25px 20px; /* Shrinks dense inner container padding zones */
+  }
+
+  .estimator-section h2 {
+    font-size: 26px;
+  }
+
+  /* [ROW 5 RESPONSIVENESS] STRATEGIC SUBSCRIPTION CARDS
+    LOGIC: Aligns complex multi-tier matrix modules into single vertical execution columns.
+  */
+  .pricing {
+    padding: 50px 5%;
+  }
+
+  .pricing h2 {
+    font-size: 26px;
+  }
+
+  .pricing-subtitle {
+    margin-bottom: 30px;
+  }
+
+  .pricing-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .pricing-card {
+    width: 100%; /* Expands localized card boundaries to match viewport limits */
+  }
+
+  /* [ROW 6 RESPONSIVENESS] SITE PLATFORM SYSTEM FOOTER
+    LOGIC: Re-maps tabular directory nodes into stacked readable tracking lists.
+  */
+  footer {
+    padding: 40px 5% 20px 5%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    width: 100%;
+    justify-content: space-around; /* Distributes sub-menus evenly across mobile bounds */
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .footer-bottom-links a {
+    margin: 0 10px; /* Balances touch alignment parameters for legal tracking targets */
+  }
+}
