@@ -173,7 +173,9 @@ nav ul li a:hover {
   width: 48%;
   text-align: left;
   border: 1px solid #e2e8f0;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .feature-card:hover {
@@ -239,7 +241,8 @@ nav ul li a:hover {
   margin-bottom: 8px;
 }
 
-.form-group input, .form-group select {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 12px;
   border: 1px solid #cbd5e1;
@@ -249,7 +252,8 @@ nav ul li a:hover {
   background-color: #ffffff;
 }
 
-.form-group input:focus, .form-group select:focus {
+.form-group input:focus,
+.form-group select:focus {
   outline: none;
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
@@ -484,14 +488,12 @@ footer {
   color: #94a3b8;
 }
 
-
 /* =======================================================================================
   🟢 CONDITIONAL MEDIA QUERY ENGINE (BREAKPOINT: 768px)
   BUSINESS LOGIC: Enforces absolute grid optimization mechanics for mobile viewports.
   =======================================================================================
 */
 @media (max-width: 768px) {
-
   /* [ROW 1 RESPONSIVENESS] GLOBAL HEADER LAYER
     LOGIC: Converts default horizontal flex vectors into vertical stack arrays.
   */
